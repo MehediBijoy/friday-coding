@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "9b961fcb-a18a-4ee5-95a8-a8183acaba78",
+		"name": "friday-coding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{host}}/transfer_balance/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"recipient\": \"2\",\r\n        \"amount\": 10,\r\n        \"scheduled_at\": \"2022-07-03 10:40:03\"\r\n    },\r\n    {\r\n        \"recipient\": \"2\",\r\n        \"amount\": 10,\r\n        \"scheduled_at\": \"2022-07-04 09:19:03\"\r\n    },\r\n    {\r\n        \"recipient\": \"2\",\r\n        \"amount\": 10,\r\n        \"scheduled_at\": null\r\n    }\r\n]"
+				},
+				"url": {
+					"raw": "{{host}}/transfer_balance/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"transfer_balance",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/user/registration/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mehedi Hasan\",\r\n    \"email\": \"test1@gmail.com\",\r\n    \"phone_number\": \"01726720012\",\r\n    \"password\": \"test12345\"\r\n}"
+				},
+				"url": {
+					"raw": "{{host}}/user/registration/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user",
+						"registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/api/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mehedi@gmail.com\",\r\n    \"password\": \"test12345\"\r\n}"
+				},
+				"url": {
+					"raw": "{{host}}/api/token/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/transaction_history/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/transaction_history/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"transaction_history",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
