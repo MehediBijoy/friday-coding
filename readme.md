@@ -76,7 +76,7 @@ sample post request data
 ]
 ```
 
-Here `recipient` field mean who received the balance,
+Here `recipient` userid who received the balance,
 if `scheduled_at` null or less then current date it's mean send balance now, otherwise transaction turned at scheduled date.
 
 ### `Transaction History`
