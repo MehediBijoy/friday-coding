@@ -66,7 +66,7 @@ sample post request data
   {
     "recipient": "2",
     "amount": 10,
-    "scheduled_at": "2022-07-010 09:19:03"
+    "scheduled_at": "2022-07-10 09:19:03"
   },
   {
     "recipient": "2",
