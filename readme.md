@@ -50,7 +50,7 @@ access token use to make balance transfer, and get transaction history.
 
 ### `Transaction Balance`
 
-api endpoints: `/transaction_history/`
+api endpoints: `/transfer_balance/`
 
 sample post request data
 
