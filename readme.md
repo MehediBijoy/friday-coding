@@ -1,22 +1,16 @@
 # Assignment API Endpoints
 
----
-
 ## Project setup
 
 clone project, and use `pipenv` or `virtualenv` for create environment. I use `pipenv` so navigate in project root directory and command `pipenv install` after installed then command `pipenv shell` for activate virtualenv. I also given `postman collections` for testing api endpoints.
 
 ## Project run
 
----
-
 `python manage.py runserver` for run project server. Also run
 ` pipenv run celery -A config worker --beat --scheduler django --loglevel=info` for background tasks.
 Make sure redis installed your machine for running `celery`.
 
 ## Api endpoints
-
----
 
 ### `Registration user`
 
