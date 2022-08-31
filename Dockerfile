@@ -8,4 +8,4 @@ RUN pipenv install
 
 COPY . .
 RUN pipenv run python manage.py migrate
-CMD ["pipenv run","gunicorn", "--bind", ":8000", "--workers", "3", "config.wsgi"]
+CMD ["pipenv", "run","gunicorn", "--bind", ":8000", "--workers", "3", "config.wsgi"]
