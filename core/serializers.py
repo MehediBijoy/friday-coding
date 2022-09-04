@@ -1,4 +1,3 @@
-from email.policy import default
 from rest_framework import serializers
 from .models import Transaction
 
@@ -12,7 +11,7 @@ class TransactionHistorySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class TransterSerializer(serializers.ModelSerializer):
+class TransferSerializer(serializers.ModelSerializer):
     sender = serializers.StringRelatedField(
         read_only=True, default=serializers.CurrentUserDefault())
 
